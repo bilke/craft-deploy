@@ -65,4 +65,6 @@ namespace :deploy do
 
 	after :finished, :create_robots
 	after :finishing, "deploy:cleanup"
+
+	after :deploy, "deploy:set_permissions:chmod"
 end

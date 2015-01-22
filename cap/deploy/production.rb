@@ -11,3 +11,6 @@ set :db_host, "[db_host]"
 set :db_name, "[db_name]"
 set :db_user, "[db_user]"
 set :db_password, "[db_password]"
+
+set :file_permissions_chmod_mode, "777"
+set :file_permissions_paths, ["craft/app", "craft/config", "craft/storage"]
