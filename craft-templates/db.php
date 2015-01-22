@@ -10,7 +10,7 @@ $customDbConfig = array(
 
 	'*' => array(
 		// Use the same prefix in all environments
-		'tablePrefix' => 'craft',
+		'tablePrefix' => '',
 
 		// Live database info
 		'server'   => 'localhost',
