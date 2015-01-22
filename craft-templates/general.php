@@ -54,6 +54,8 @@ $customConfig = array(
 
 		'omitScriptNameInUrls' => true,
 
+		'overridePhpSessionLocation' => true,
+
 		// Manage our routes in the craft/config/routes.php file
 		// 'siteRoutesSource'   => 'file',
 	),
