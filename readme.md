@@ -1,6 +1,6 @@
 # Craft Deploy by Bluegg
 
-A framework for deploying Craft websites with Capistrano 3. 
+A framework for deploying Craft websites with Capistrano 3.
 
 ## Features
 
@@ -45,11 +45,11 @@ Run this (on OS X or Linux) with:
 bash install.sh
 ```
 
-Feel free to remove this file afterwards, as its no longer required. 
+Feel free to remove this file afterwards, as its no longer required.
 
 **Windows users, I have no idea how to do this, you're on your own!**
 
-### 2. Install Craft 
+### 2. Install Craft
 
 From there, you can go ahead and install Craft locally. This framework contains a basic setup for managing different Craft environments, by default it assumes 'local', 'staging' and 'live' environments. To configure your local Craft environment, you will find the config in /craft/config/local/db.php. Here, you enter your 'local' database connection strings.
 
@@ -139,4 +139,12 @@ cap production craft:push
 
 ```sh
 cap production craft:pull
+```
+
+After the initial sync check file permissions on the server. Maybe you have to set them:
+
+```sh
+chgrp -R [user] shared/assets
+chown -R [user] shared/assets
+chmod -R 777 shared/assets
 ```
